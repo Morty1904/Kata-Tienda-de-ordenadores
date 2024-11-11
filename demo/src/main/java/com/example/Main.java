@@ -16,7 +16,6 @@ public class Main {
         boolean continuar = true;
 
         while (continuar) {
-            // Mostrar las opciones
             System.out.println("Elija una opción:");
             System.out.println("1. Agregar un computador");
             System.out.println("2. Eliminar un computador");
@@ -24,17 +23,16 @@ public class Main {
             System.out.println("4. Salir");
 
             int opcion = scanner.nextInt();
-            scanner.nextLine();  // Consumir la nueva línea
+            scanner.nextLine();
 
             switch (opcion) {
                 case 1:
-                    // Agregar un computador
                     System.out.println("Ingrese la marca del computador:");
                     String marca = scanner.nextLine();
 
                     System.out.println("Ingrese la cantidad de memoria (GB):");
                     int memoria = scanner.nextInt();
-                    scanner.nextLine();  // Consumir la nueva línea
+                    scanner.nextLine();
 
                     System.out.println("Ingrese el procesador:");
                     String procesador = scanner.nextLine();
@@ -44,7 +42,7 @@ public class Main {
 
                     System.out.println("Ingrese el precio:");
                     double precio = scanner.nextDouble();
-                    scanner.nextLine();  // Consumir la nueva línea
+                    scanner.nextLine();
 
                     Computador nuevoComputador = new Computador(marca, memoria, procesador, sistemaOperativo, precio);
                     tienda.agregarComputador(nuevoComputador);
@@ -52,7 +50,6 @@ public class Main {
                     break;
 
                 case 2:
-                    // Eliminar un computador
                     System.out.println("Ingrese la marca del computador a eliminar:");
                     String marcaEliminar = scanner.nextLine();
 
@@ -65,7 +62,6 @@ public class Main {
                     break;
 
                 case 3:
-                    // Listar los computadores actuales
                     System.out.println("Lista de Computadores:");
                     for (Computador c : tienda.listarComputadores()) {
                         System.out.println(c);
@@ -73,7 +69,6 @@ public class Main {
                     break;
 
                 case 4:
-                    // Salir
                     System.out.println("¡Hasta luego!");
                     continuar = false;
                     break;
