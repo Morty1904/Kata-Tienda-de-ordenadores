@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        TiendaComputadores tienda = new TiendaComputadores("Tienda Tech", "Morty", "12345XYZ");
+        TiendaComputadores tienda = new TiendaComputadores("Rick's Garage", "Morty", "12345XYZ");
 
         Computador computador1 = new Computador("HP", 16, "Intel i7", "Windows 10", 1200.0);
         Computador computador2 = new Computador("ASUS", 8, "Intel i5", "Windows 10", 800.0);
