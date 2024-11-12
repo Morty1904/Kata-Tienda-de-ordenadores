@@ -27,4 +27,4 @@ Captura de pantalla de la sección testing de VSCode que muestre que se ha compl
 
 # Contacto
 
-https://www.linkedin.com/feed/
+[https://www.linkedin.com/feed/](https://www.linkedin.com/in/%C3%B3scar-men%C3%A9ndez-barrio-b3753a32b/)
